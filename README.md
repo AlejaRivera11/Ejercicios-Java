@@ -1,5 +1,6 @@
 # Taller de Refuerzo 
-GIT:
+## GIT
+
 1. ¿Qué es un repositorio en Git y cómo se diferencia de un proyecto “normal”?
 2. ¿Cuáles son las tres áreas principales de Git (working directory, staging area/index y repository) y qué papel cumple cada una?
 3. ¿Cómo representa Git los cambios internamente? (objetos blob, tree, commit y tag).
@@ -15,15 +16,15 @@ GIT:
 13. ¿Cómo funciona la configuración de remotos (origin, upstream) y qué comandos uso para gestión de forks?
 14. ¿Cómo puedo inspeccionar el historial de commits (por ejemplo, git log, git diff, git show)?
 
+## Programación
 
+16. ¿Cuáles son los tipos de datos primitivos en Java?
+17. ¿Cómo funcionan las estructuras de control de flujo como if, else, switch y bucles en Java?
+18. ¿Por qué es importante usar nombres significativos para variables y métodos?
+19. ¿Qué es la Programación Orientada a Objetos (POO)?
+20. ¿Cuáles son los cuatro pilares de la Programación Orientada a Objetos?
+21. ¿Qué es la herencia en POO y cómo se utiliza en Java?
+22. ¿Qué son los modificadores de acceso y cuáles son los más comunes en Java?
+23. ¿Qué es una variable de entorno y por qué son importantes para Java o la programación en general?
 
-Programación:
-15. ¿Cuáles son los tipos de datos primitivos en Java?
-16. ¿Cómo funcionan las estructuras de control de flujo como if, else, switch y bucles en Java?
-17. ¿Por qué es importante usar nombres significativos para variables y métodos?
-18. ¿Qué es la Programación Orientada a Objetos (POO)?
-19. ¿Cuáles son los cuatro pilares de la Programación Orientada a Objetos?
-20. ¿Qué es la herencia en POO y cómo se utiliza en Java?
-21. ¿Qué son los modificadores de acceso y cuáles son los más comunes en Java?
-22. ¿Qué es una variable de entorno y por qué son importantes para Java o la programación en general?
 
