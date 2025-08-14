@@ -73,11 +73,18 @@ La diferencia entre con un Proyecto “normal”, es que este solo es una carpet
 - Es comparable a redactar una carta pero no colocarla en el sobre antes de enviarla.
 
 9. ¿Qué es el archivo .gitignore y cómo influye en el seguimiento de archivos?
-10. ¿Cuál es la diferencia entre un “commit amend” (--amend) y un nuevo commit?
-11. ¿Cómo se utiliza git stash y en qué escenarios es útil?
-12. ¿Qué mecanismos ofrece Git para deshacer cambios (por ejemplo, git reset, git revert, git checkout)?
-13. ¿Cómo funciona la configuración de remotos (origin, upstream) y qué comandos uso para gestión de forks?
-14. ¿Cómo puedo inspeccionar el historial de commits (por ejemplo, git log, git diff, git show)?
+   
+- **Gitignore**
+
+Es un archivo de texto que contiene una lista de patrones que indican a Git qué archivos o carpetas deben ser ignorados.
+Funciones:
+Permite excluir archivos que no deben formar parte del repositorio, como: Archivos temporales o de caché, Archivos generados automáticamente por el sistema o el entorno de desarrollo, Configuraciones locales y credenciales, Archivo que lista patrones de archivos/carpetas que Git debe ignorar y Evita que se rastreen archivos temporales, credenciales, builds, etc.
+
+11. ¿Cuál es la diferencia entre un “commit amend” (--amend) y un nuevo commit?
+12. ¿Cómo se utiliza git stash y en qué escenarios es útil?
+13. ¿Qué mecanismos ofrece Git para deshacer cambios (por ejemplo, git reset, git revert, git checkout)?
+14. ¿Cómo funciona la configuración de remotos (origin, upstream) y qué comandos uso para gestión de forks?
+15. ¿Cómo puedo inspeccionar el historial de commits (por ejemplo, git log, git diff, git show)?
 
 ## Programación
 
