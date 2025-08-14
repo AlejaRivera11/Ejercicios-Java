@@ -45,11 +45,33 @@ La diferencia entre con un Proyecto “normal”, es que este solo es una carpet
 - Si hay conflictos, será necesario resolverlos manualmente.  
 
 **Tipos de conflictos que pueden surgir**  
-- Conflictos de contenido : Cuando las mismas líneas de un archivo fueron modificadas en ambas ramas de forma diferente.  
-- Conflictos de eliminación : Una rama elimina un archivo mientras la otra lo modifica.  
-- Conflictos de renombrado : El mismo archivo es renombrado de forma diferente en cada rama.
+- **Conflictos de contenido :** Cuando las mismas líneas de un archivo fueron modificadas en ambas ramas de forma diferente.  
+- **Conflictos de eliminación :** Una rama elimina un archivo mientras la otra lo modifica.  
+- **Conflictos de renombrado :** El mismo archivo es renombrado de forma diferente en cada rama.
 
-8. ¿Cómo funciona el área de staging (git add) y qué pasa si omito este paso?
+**Resolución de conflictos**  
+- Git marcará los archivos con indicadores para mostrar las diferencias.  
+- Revisar cada archivo en conflicto y decidir qué cambios conservar, modificar o combinar.  
+- Marcar cada archivo como resuelto usando: git add nombre_archivo.  
+- Finalizar el merge para registrar la combinación de cambios con: git commit
+
+8. ¿Cómo funciona el área de staging (git add) y qué pasa si omito este paso?  
+
+**Función del área de staging**
+- El área de staging (o staging area) es una zona intermedia donde se guardan los cambios que se incluirán en el próximo commit.  
+- Permite seleccionar de forma precisa qué modificaciones de archivos formarán parte de ese commit.  
+- Se actualiza con el comando git add nombre_archivo o git add . para añadir todos los cambios.  
+
+**Qué sucede cuando se usa git add**  
+- Git toma una “fotografía” del contenido actual del archivo y la guarda en el área de staging.  
+- El archivo queda marcado para ser incluido en el siguiente commit.  
+- Si el archivo se modifica nuevamente después de ser añadido, esos cambios no estarán en el staging hasta volver a usar git add.  
+
+**Qué pasa si se omite este paso**  
+- Los cambios permanecerán únicamente en el directorio de trabajo y no se incluirán en el próximo commit.  
+- El commit se generará únicamente con los cambios que estén en el staging, por lo que podrían quedar modificaciones fuera del historial.  
+- Es comparable a redactar una carta pero no colocarla en el sobre antes de enviarla.
+
 9. ¿Qué es el archivo .gitignore y cómo influye en el seguimiento de archivos?
 10. ¿Cuál es la diferencia entre un “commit amend” (--amend) y un nuevo commit?
 11. ¿Cómo se utiliza git stash y en qué escenarios es útil?
