@@ -35,7 +35,20 @@ La diferencia entre con un Proyecto “normal”, es que este solo es una carpet
 - **Git** gestiona las ramas moviendo ese puntero al nuevo commit cada vez que haces uno.  
 - **HEAD** es el puntero que indica en qué rama/commit estás trabajando.
 
-7. ¿Cómo se realiza un merge y qué conflictos pueden surgir? ¿Cómo se resuelven?
+7. ¿Cómo se realiza un merge y qué conflictos pueden surgir? ¿Cómo se resuelven?  
+
+**Cómo se realiza un merge**  
+- Ubicarse en la rama de destino (la que recibirá los cambios) usando: git checkout main.  
+- Iniciar el proceso de merge indicando la rama origen con: git merge nombre_rama  
+- Git intentará combinar automáticamente los cambios de ambas ramas.  
+- Si no hay conflictos, el merge finaliza y se crea un commit de merge.  
+- Si hay conflictos, será necesario resolverlos manualmente.  
+
+**Tipos de conflictos que pueden surgir**  
+- Conflictos de contenido : Cuando las mismas líneas de un archivo fueron modificadas en ambas ramas de forma diferente.  
+- Conflictos de eliminación : Una rama elimina un archivo mientras la otra lo modifica.  
+- Conflictos de renombrado : El mismo archivo es renombrado de forma diferente en cada rama.
+
 8. ¿Cómo funciona el área de staging (git add) y qué pasa si omito este paso?
 9. ¿Qué es el archivo .gitignore y cómo influye en el seguimiento de archivos?
 10. ¿Cuál es la diferencia entre un “commit amend” (--amend) y un nuevo commit?
