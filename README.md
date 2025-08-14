@@ -6,15 +6,35 @@ Un repositorio en Git es un lugar donde puedes almacenar el código, los archivo
 Además es una carpeta de proyecto que contiene un subdirectorio oculto llamado .git donde se guarda todo el historial, configuración y metadatos del control de versiones.  
 La diferencia entre con un Proyecto “normal”, es que este solo es una carpeta con archivos; no tiene control de versiones ni historial.
 
-2. ¿Cuáles son las tres áreas principales de Git (working directory, staging area/index y repository) y qué papel cumple cada una?
+2. ¿Cuáles son las tres áreas principales de Git (working directory, staging area/index y repository) y qué papel cumple cada una?  
 - **Working directory (Directorio de trabajo):** es la copia local de los archivos del proyecto en la máquina. Aquí es donde se realizan modificaciones, crear nuevos archivos o eliminar los que ya no son necesarios. Estos cambios son detectados por Git, pero aún no forman parte del historial oficial hasta que son confirmados.  
 - **Staging área / Index:** es una zona intermedia que almacena temporalmente los cambios que se desean incluir en el próximo commit. Al usar git add, se añade archivos o modificaciones específicas a esta área. Esto permite seleccionar de manera precisa qué cambios serán confirmados, facilitando la organización y claridad en el historial de versiones.  
 - **Repository (Repositorio local):** es la base de datos interna donde Git guarda todos los commits y el historial completo del proyecto. Cuando se ejecuta git commit, los cambios almacenados en la staging area se registran de forma permanente en el repositorio local. Cada commit incluye un snapshot de los archivos en ese momento, junto con información sobre el autor y un mensaje descriptivo.  
 
-3. ¿Cómo representa Git los cambios internamente? (objetos blob, tree, commit y tag).
-4. ¿Cómo se crea un commit y qué información almacena un objeto commit?
-5. ¿Cuál es la diferencia entre git pull y git fetch?
-6. ¿Qué es un branch (rama) en Git y cómo Git gestiona los punteros a commits?
+3. ¿Cómo representa Git los cambios internamente? (objetos blob, tree, commit y tag).  
+**Blob (Binary Large Object):**  Guarda el contenido exacto de un archivo, pero sin información sobre su nombre ni ubicación. Cada versión distinta de un archivo genera un blob distinto, incluso si el cambio es mínimo.  
+**Tree :**  Representa el contenido de un directorio. Contiene referencias a otros trees (subdirectorios) y a blobs (archivos), junto con los nombres y permisos. Es como un “índice” que dice qué archivos existen y dónde.  
+**Commit :** Es un objeto que guarda un snapshot (foto) del proyecto en un momento específico. Apunta a un objeto tree (el estado de la carpeta raíz), al commit anterior (o commits padres), y almacena metadatos como autor, fecha y mensaje.  
+**ag:** Es una etiqueta que apunta a un commit específico. Puede ser ligera (solo referencia) o anotada (incluye información adicional como nombre del creador, fecha y mensaje).  
+
+4. ¿Cómo se crea un commit y qué información almacena un objeto commit?.  
+- **Flujo**
+    - git add para pasar cambios al staging.  
+    - git commit -m "mensaje" para confirmar.  
+- **Un commit almacena:**  
+    - Puntero al tree con el estado de los archivos.  
+    - Referencia(s) a commit(s) padre(s).  
+    - Autor y fecha.  
+    - Mensaje descriptivo.
+
+5. ¿Cuál es la diferencia entre git pull y git fetch?  
+- **git fetch:** Descarga cambios del remoto, pero no los fusiona con tu rama actual. Solo actualiza referencias.  
+- **git pull:** Hace fetch + merge (o rebase si se configura). Trae y aplica los cambios al instante.
+6. ¿Qué es un branch (rama) en Git y cómo Git gestiona los punteros a commits?  
+- Un **branch** es simplemente un puntero que apunta a un commit específico.  
+- **Git** gestiona las ramas moviendo ese puntero al nuevo commit cada vez que haces uno.  
+- **HEAD** es el puntero que indica en qué rama/commit estás trabajando.
+
 7. ¿Cómo se realiza un merge y qué conflictos pueden surgir? ¿Cómo se resuelven?
 8. ¿Cómo funciona el área de staging (git add) y qué pasa si omito este paso?
 9. ¿Qué es el archivo .gitignore y cómo influye en el seguimiento de archivos?
