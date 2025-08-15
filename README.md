@@ -80,21 +80,30 @@ Es un archivo de texto que contiene una lista de patrones que indican a Git qué
 Funciones:
 Permite excluir archivos que no deben formar parte del repositorio, como: Archivos temporales o de caché, Archivos generados automáticamente por el sistema o el entorno de desarrollo, Configuraciones locales y credenciales, Archivo que lista patrones de archivos/carpetas que Git debe ignorar y Evita que se rastreen archivos temporales, credenciales, builds, etc.
 
-11. ¿Cuál es la diferencia entre un “commit amend” (--amend) y un nuevo commit?
-12. ¿Cómo se utiliza git stash y en qué escenarios es útil?
-13. ¿Qué mecanismos ofrece Git para deshacer cambios (por ejemplo, git reset, git revert, git checkout)?
-14. ¿Cómo funciona la configuración de remotos (origin, upstream) y qué comandos uso para gestión de forks?
-15. ¿Cómo puedo inspeccionar el historial de commits (por ejemplo, git log, git diff, git show)?
+10. ¿Cuál es la diferencia entre un “commit amend” (--amend) y un nuevo commit?  
+- **Nuevo commit:** Añade un registro más al historial.  
+- **--amend:** Reemplaza el último commit (mensaje y/o contenido), modificando el historial. Útil para corregir errores recientes.
+
+11. ¿Cómo se utiliza git stash y en qué escenarios es útil?.  
+- Guarda temporalmente cambios no confirmados (y limpia el working directory).  
+- Escenarios útiles: Cuando necesitas cambiar de rama rápidamente pero no quieres hacer commit de cambios incompletos.  
+- Se recupera con git stash pop o git stash apply.
+12. ¿Qué mecanismos ofrece Git para deshacer cambios (por ejemplo, git reset, git revert, git checkout)?  
+- **git reset:** Mueve punteros y opcionalmente borra cambios del staging o del working directory.  
+- **git revert:** Crea un commit nuevo que revierte uno anterior, preservando historial.  
+- **git checkout (o git restore en versiones nuevas):** Restaura un archivo a una versión específica.
+13. ¿Cómo funciona la configuración de remotos (origin, upstream) y qué comandos uso para gestión de forks?
+14. ¿Cómo puedo inspeccionar el historial de commits (por ejemplo, git log, git diff, git show)?
 
 ## Programación
 
-16. ¿Cuáles son los tipos de datos primitivos en Java?
-17. ¿Cómo funcionan las estructuras de control de flujo como if, else, switch y bucles en Java?
-18. ¿Por qué es importante usar nombres significativos para variables y métodos?
-19. ¿Qué es la Programación Orientada a Objetos (POO)?
-20. ¿Cuáles son los cuatro pilares de la Programación Orientada a Objetos?
-21. ¿Qué es la herencia en POO y cómo se utiliza en Java?
-22. ¿Qué son los modificadores de acceso y cuáles son los más comunes en Java?
-23. ¿Qué es una variable de entorno y por qué son importantes para Java o la programación en general?
+15. ¿Cuáles son los tipos de datos primitivos en Java?
+16. ¿Cómo funcionan las estructuras de control de flujo como if, else, switch y bucles en Java?
+17. ¿Por qué es importante usar nombres significativos para variables y métodos?
+18. ¿Qué es la Programación Orientada a Objetos (POO)?
+19. ¿Cuáles son los cuatro pilares de la Programación Orientada a Objetos?
+20. ¿Qué es la herencia en POO y cómo se utiliza en Java?
+21. ¿Qué son los modificadores de acceso y cuáles son los más comunes en Java?
+22. ¿Qué es una variable de entorno y por qué son importantes para Java o la programación en general?
 
 
