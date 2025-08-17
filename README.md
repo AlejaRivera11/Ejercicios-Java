@@ -108,12 +108,43 @@ Permite excluir archivos que no deben formar parte del repositorio, como: Archiv
 ## Programación
 
 15. ¿Cuáles son los tipos de datos primitivos en Java?
+    
+ Java tiene 8 tipos primitivos:
+- byte (8 bits, enteros pequeños)
+- short (16 bits, enteros medianos)
+- int (32 bits, enteros)
+- long (64 bits, enteros grandes)
+- float (32 bits, decimales de precisión simple)
+- double (64 bits, decimales de doble precisión)
+- char (16 bits, un carácter Unicode)
+- boolean (true / false)
+
 16. ¿Cómo funcionan las estructuras de control de flujo como if, else, switch y bucles en Java?
+- **if / else:** Ejecutan bloques de código según condiciones booleanas.
+- **switch:** Evalúa una expresión y ejecuta el caso (case) que coincida, con opción de default.
+- **Bucles:**
+  - **for:** Repite un bloque un número definido de veces.
+  - **while:** Repite mientras la condición sea verdadera.
+  - **do-while:** Similar a while pero ejecuta al menos una vez antes de evaluar la condición.
+  - **for-each:** Recorre colecciones o arreglos.
 17. ¿Por qué es importante usar nombres significativos para variables y métodos?
+
+- Mejoran la legibilidad y mantenibilidad del código.
+- Ayudan a otros desarrolladores (y a ti mismo en el futuro) a entender la lógica sin tener que leer cada detalle de la implementación.
+- Evitan confusiones y errores al dar contexto sobre lo que hace la variable o método.
+
 18. ¿Qué es la Programación Orientada a Objetos (POO)?
+
+Paradigma de programación que organiza el software en objetos, los cuales combinan datos (atributos) y comportamientos (métodos). Se basa en modelar elementos del mundo real o abstractos.
+
 19. ¿Cuáles son los cuatro pilares de la Programación Orientada a Objetos?
-20. ¿Qué es la herencia en POO y cómo se utiliza en Java?
-21. ¿Qué son los modificadores de acceso y cuáles son los más comunes en Java?
-22. ¿Qué es una variable de entorno y por qué son importantes para Java o la programación en general?
+    
+  - Encapsulamiento → Ocultar detalles internos y exponer sólo lo necesario.
+  - Abstracción → Representar ideas esenciales sin incluir detalles innecesarios.
+  - Herencia → Reutilizar código mediante clases que heredan propiedades y métodos de otras.
+  - Polimorfismo → Capacidad de que diferentes clases respondan de forma distinta al mismo método.
+22. ¿Qué es la herencia en POO y cómo se utiliza en Java?
+23. ¿Qué son los modificadores de acceso y cuáles son los más comunes en Java?
+24. ¿Qué es una variable de entorno y por qué son importantes para Java o la programación en general?
 
 
