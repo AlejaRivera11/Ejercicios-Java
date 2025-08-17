@@ -14,7 +14,7 @@ public class Ejercicio1 {
         int opcion;
         int resultado;
         
-        System.out.println("\nOperaciones aritmeticas basicas");
+        System.out.println("\nOperaciones aritmeticas");
         System.out.println("M E N U   D E   O P C I O N E S");
         System.out.println("1. Suma");
         System.out.println("2. Resta");
@@ -46,6 +46,6 @@ public class Ejercicio1 {
                 System.out.println("Opcion no valida por favor verifique");                         
         }
         
-        sc.close();
+    
     }
 }

@@ -1,6 +1,12 @@
 # Taller de Refuerzo 
-## GIT
 
+
+### Integrantes: 
+- Alejandra Rivera Montero  
+- Sebastian Medellin Quintero 
+### Grupo: 411
+
+## GIT
 1. ¿Qué es un repositorio en Git y cómo se diferencia de un proyecto “normal”?  
 Un repositorio en Git es un lugar donde puedes almacenar el código, los archivos y el historial de revisiones de cada archivo. Los repositorios pueden contar con múltiples colaboradores, pueden ser públicos como privados y permite volver a versiones anteriores del código.  
 Además es una carpeta de proyecto que contiene un subdirectorio oculto llamado .git donde se guarda todo el historial, configuración y metadatos del control de versiones.  
@@ -143,8 +149,30 @@ Paradigma de programación que organiza el software en objetos, los cuales combi
   - Abstracción → Representar ideas esenciales sin incluir detalles innecesarios.
   - Herencia → Reutilizar código mediante clases que heredan propiedades y métodos de otras.
   - Polimorfismo → Capacidad de que diferentes clases respondan de forma distinta al mismo método.
-22. ¿Qué es la herencia en POO y cómo se utiliza en Java?
-23. ¿Qué son los modificadores de acceso y cuáles son los más comunes en Java?
-24. ¿Qué es una variable de entorno y por qué son importantes para Java o la programación en general?
+20. ¿Qué es la herencia en POO y cómo se utiliza en Java?  
+Permite crear una clase (subclase) a partir de otra (superclase), heredando atributos y métodos.  
+En Java se usa la palabra clave extends:  
+**Ejemplo**  
 
+<font color="blue">class Animal </font>{  
+
+   <font color="red">  void hacerSonido</font>(){ System.out.println("Sonido genérico"); } 
+    
+   }
+
+<font color="blue">class Perro extends Animal</font> {  
+
+  <font color="red"> void hacerSonido</font>() { System.out.println("Ladrar"); } 
+   
+  }
+
+21. ¿Qué son los modificadores de acceso y cuáles son los más comunes en Java?  
+**public:**  Accesible desde cualquier clase.  
+**protected:** Accesible desde la misma clase, subclases y mismo paquete.  
+**default (sin palabra clave):** Accesible solo dentro del mismo paquete.  
+**private:** Accesible solo dentro de la misma clase.
+22. ¿Qué es una variable de entorno y por qué son importantes para Java o la programación en general?  
+- Es un valor almacenado en el sistema operativo que los programas pueden leer.  
+- Se usan para configurar comportamientos (por ejemplo, JAVA_HOME para indicar dónde está instalado Java).  
+- Son importantes porque permiten configuración sin modificar el código, facilitan la portabilidad y ayudan a manejar credenciales, rutas y configuraciones sensibles.
 
