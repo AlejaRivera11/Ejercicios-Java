@@ -93,7 +93,17 @@ Permite excluir archivos que no deben formar parte del repositorio, como: Archiv
 - **git revert:** Crea un commit nuevo que revierte uno anterior, preservando historial.  
 - **git checkout (o git restore en versiones nuevas):** Restaura un archivo a una versión específica.
 13. ¿Cómo funciona la configuración de remotos (origin, upstream) y qué comandos uso para gestión de forks?
+- **origin:** Nombre por defecto del remoto principal de tu repositorio.
+- **upstream:** Nombre usado comúnmente para el remoto del repositorio original del cual hiciste un fork.
+- **Comandos:**
+  - git remote add origin <url>
+  - git remote add upstream <url>
+  - git fetch upstream para traer cambios del original.
+
 14. ¿Cómo puedo inspeccionar el historial de commits (por ejemplo, git log, git diff, git show)?
+- git log: Lista commits (puede filtrarse por autor, fecha, etc.).
+- git diff: Muestra cambios entre commits o entre el working directory y el staging/repo.
+- git show <commit>: Muestra detalles y cambios de un commit específico.
 
 ## Programación
 
