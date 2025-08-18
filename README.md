@@ -9,8 +9,8 @@
 Este taller se realizo para reforzar y profundizar temas importantes, ademas se realizaron 3 ejercicios practicos los cuales estan adjuntos 
 en este repositorio.
 
-Ejercicio 1: Una calculadora
-Ejercicio 2: Invertir una cadena de texto
+Ejercicio 1: Una calculadora  
+Ejercicio 2: Invertir una cadena de texto  
 Ejercicio 3: Contador de Consonantes y vocales
 
 ## GIT
