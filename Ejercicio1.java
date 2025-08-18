@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class Ejercicio1 {
@@ -6,10 +7,10 @@ public class Ejercicio1 {
        
         Scanner sc = new Scanner(System.in);
         
-        System.out.println("Ingrese el primer valor");
-        int num1 = sc.nextInt();
-        System.out.println("Ingrese el segundo valor");
-        int num2 = sc.nextInt();
+        System.out.println("Ingrese el primer numero");
+        int n1 = sc.nextInt();
+        System.out.println("Ingrese el segundo numero");
+        int n2 = sc.nextInt();
         
         int opcion;
         int resultado;
@@ -21,29 +22,29 @@ public class Ejercicio1 {
         System.out.println("3. Multiplicacion");
         System.out.println("4. Division");
         
-        System.out.println("\nDigite una opcion ");
+        System.out.println("\nDigite una opcion para realizar la operacion");
         opcion = sc.nextInt();
         
         switch (opcion) {
             case 1:
-                resultado = num1 + num2;
+                resultado = n1 + n2;
                 System.out.println("La suma es: " + resultado);
                 break;
             case 2:
-                resultado = num1 - num2;
+                resultado = n1 - n2;
                 System.out.println("La resta es: " + resultado);
                 break;   
             case 3:
-                resultado = num1 * num2;
+                resultado = n1 * n2;
                 System.out.println("La multiplicacion es: " + resultado);
                 break;  
             case 4:
-                resultado = num1 / num2;
+                resultado = n1 / n2;
                     System.out.println("La divicion es: " + resultado);
                     break; 
                      
             default:
-                System.out.println("Opcion no valida por favor verifique");                         
+                System.out.println("Opcion no valida por favor verificar");                         
         }
         
     

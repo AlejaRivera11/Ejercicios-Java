@@ -6,6 +6,13 @@
 - Sebastian Medellin Quintero 
 ### Grupo: 411
 
+Este taller se realizo para reforzar y profundizar temas importantes, ademas se realizaron 3 ejercicios practicos los cuales estan adjuntos 
+en este repositorio.
+
+Ejercicio 1: Una calculadora
+Ejercicio 2: Invertir una cadena de texto
+Ejercicio 3: Contador de Consonantes y vocales
+
 ## GIT
 1. ¿Qué es un repositorio en Git y cómo se diferencia de un proyecto “normal”?  
 Un repositorio en Git es un lugar donde puedes almacenar el código, los archivos y el historial de revisiones de cada archivo. Los repositorios pueden contar con múltiples colaboradores, pueden ser públicos como privados y permite volver a versiones anteriores del código.  

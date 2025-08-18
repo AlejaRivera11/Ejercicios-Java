@@ -28,6 +28,5 @@ public class Ejercicio3{
         System.out.println("Número de vocales: " + vocales);
         System.out.println("Número de consonantes: " + consonantes);
 
-        sc.close();
     }
 }
